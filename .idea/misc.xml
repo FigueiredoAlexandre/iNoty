@@ -1,0 +1,39 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/app/feature/diarycreation/src/main/res/drawable/diary_creation_image_section_bg.xml" value="0.205" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/app/feature/diarycreation/src/main/res/layout/diary_creation_activity.xml" value="0.33" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/app/feature/diarycreation/src/main/res/layout/diary_creation_add_image_item_layout.xml" value="0.375" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/app/feature/diarycreation/src/main/res/layout/diary_creation_image_item_layout.xml" value="0.375" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/app/feature/diarylist/src/main/res/layout/diary_list_activity.xml" value="0.33" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/app/feature/diarylist/src/main/res/layout/diary_list_diary_item_layout.xml" value="0.33125" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/app/feature/diarylist/src/main/res/layout/diary_list_header_layout.xml" value="0.33" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/app/src/main/res/layout/activity_main.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/drawable/ic_inoty_arrow_next.xml" value="0.205" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/drawable/ic_inoty_emoji_irritated.xml" value="0.205" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/drawable/ic_inoty_emoji_sad.xml" value="0.205" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/drawable/ic_inoty_emoji_surprised.xml" value="0.205" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/drawable/ic_inoty_expand_arrow.xml" value="0.248" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/drawable/ic_inoty_laughing_emoji.xml" value="0.1935" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/drawable/ic_noty_emoji_thoughtful.xml" value="0.205" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/drawable/inoty_button_background.xml" value="0.219" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/drawable/inoty_extra_images_bg.xml" value="0.239" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/layout/inoty_aditional_image_layout.xml" value="0.18642350557244175" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/layout/inoty_button_layout.xml" value="0.2827868852459016" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/layout/inoty_expandable_card_layout.xml" value="0.25" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/layout/inoty_image_gallery_layout.xml" value="0.33" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/layout/inoty_progress_dialog_layout.xml" value="0.26024590163934425" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/layout/inoty_snackbar_layout.xml" value="0.3451086956521739" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/layout/inoty_toolbar.xml" value="0.375" />
+        <entry key="..\:/Users/usemobile/AndroidStudioProjects/iNoty/designsystem/ui/src/main/res/layout/inoty_toolbar_layout.xml" value="0.18642350557244175" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

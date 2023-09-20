@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_inoty_green">#27B62D</color>
+    <color name="color_inoty_greyscale_dark">#0E0E0E</color>
+    <color name="color_inoty_dark_blue">#101635</color>
+    <color name="color_inoty_white">#ffffff</color>
+    <color name="color_inoty_medium_dark_blue">#313960</color>
+    <color name="color_inoty_medium_light_dark_blue">#202B5A</color>
+    <color name="color_inoty_light_blue">#7081D5</color>
+    <color name="color_inoty_light_white_blue">#A8B5F3</color>
+    <color name="color_inoty_light_grey">#CCC8C8</color>
+    <color name="color_inoty_medium_grey">#5E5D5D</color>
+    <color name="color_inoty_irritated">#ED410A</color>
+    <color name="color_inoty_surprised">#AE29C5</color>
+    <color name="color_inoty_sad">#858385</color>
+    <color name="color_inoty_happy">#27B62D</color>
+</resources>

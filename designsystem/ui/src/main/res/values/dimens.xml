@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="inoty_dimen_2">2dp</dimen>
+    <dimen name="inoty_dimen_4">4dp</dimen>
+    <dimen name="inoty_dimen_6">6dp</dimen>
+    <dimen name="inoty_dimen_8">8dp</dimen>
+    <dimen name="inoty_dimen_12">12dp</dimen>
+    <dimen name="inoty_dimen_16">16dp</dimen>
+    <dimen name="inoty_dimen_14">14dp</dimen>
+    <dimen name="inoty_dimen_18">18dp</dimen>
+    <dimen name="inoty_dimen_20">20dp</dimen>
+    <dimen name="inoty_dimen_24">24dp</dimen>
+    <dimen name="inoty_dimen_28">28dp</dimen>
+    <dimen name="inoty_dimen_32">32dp</dimen>
+    <dimen name="inoty_dimen_42">42dp</dimen>
+    <dimen name="inoty_dimen_64">64dp</dimen>
+</resources>

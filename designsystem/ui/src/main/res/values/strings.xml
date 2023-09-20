@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="inoty_laughing_emoji_content_description">Emoji rindo</string>
+    <string name="inoty_show_images">Mostrar imagens</string>
+    <string name="inoty_expand">Expandir</string>
+    <string name="inoty_amount_of_aditional_images">+ %s</string>
+    <string name="inoty_emotion_happy">Alegre</string>
+    <string name="inoty_emotion_surprised">Surpreso(a)</string>
+    <string name="inoty_emotion_sad">Triste</string>
+    <string name="inoty_emotion_irritated">Irritado(a)</string>
+    <string name="inoty_write_new_diary">Escrever novo diário</string>
+</resources>

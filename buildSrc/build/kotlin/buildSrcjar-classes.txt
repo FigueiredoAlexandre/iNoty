@@ -1,0 +1,1 @@
+C:\Users\usemobile\AndroidStudioProjects\iNoty\buildSrc\build\classes\kotlin\main\Libs.class;C:\Users\usemobile\AndroidStudioProjects\iNoty\buildSrc\build\classes\kotlin\main\LocalLibs.class;C:\Users\usemobile\AndroidStudioProjects\iNoty\buildSrc\build\classes\kotlin\main\Versions.class

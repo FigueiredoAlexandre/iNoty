@@ -1,0 +1,13 @@
+config:
+  validation: true
+  excludes: "MyRuleSet"
+
+MyRuleSet:
+  TooManyFunctions:
+    active: false
+  WildCardImport:
+    active: true
+
+complexity:
+  TooManyFunctions:
+    active: false

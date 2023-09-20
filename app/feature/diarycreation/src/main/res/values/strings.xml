@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diary_creation_arrow_left_description">Emoção anterior</string>
+    <string name="diary_creation_title_hint">Digite um título</string>
+    <string name="diary_creation_body_text_field_hint">Digite seu diário aqui :)</string>
+    <string name="diary_creation_save_label">Salvar</string>
+    <string name="diary_creation_plus_sign">+</string>
+</resources>

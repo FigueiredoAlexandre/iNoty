@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="INotyButton">
+        <attr name="btnText" format="string|reference" />
+        <attr name="btnTextColor" format="color|reference" />
+        <attr name="btnBackground" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdk Versions.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.example.inoty"
+        minSdk Versions.minSdkVersion
+        targetSdk Versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    // Android
+    implementation Libs.coreKtx
+    implementation Libs.appCompat
+    implementation Libs.material
+    implementation Libs.constraintLayout
+    implementation Libs.koin
+    implementation Libs.room
+    annotationProcessor Libs.roomCompiler
+
+    // Test
+    testImplementation Libs.jUnit
+    androidTestImplementation Libs.jUnitAndroid
+    androidTestImplementation Libs.espresso
+
+    // Local
+    implementation project(LocalLibs.diaryCreation)
+    implementation project(LocalLibs.navigation)
+    implementation project(LocalLibs.localStorage)
+    implementation project(LocalLibs.diaryList)
+}

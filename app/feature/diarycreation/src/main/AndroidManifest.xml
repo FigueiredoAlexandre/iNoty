@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.diarycreation">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application>
+
+        <activity
+            android:name="com.example.diarycreation.presentation.DiaryCreationActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
+    </application>
+</manifest>

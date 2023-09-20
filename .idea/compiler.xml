@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.8">
+      <module name="iNoty.app" target="17" />
+      <module name="iNoty.app.feature.diarycreation" target="17" />
+      <module name="iNoty.app.feature.diarylist" target="17" />
+      <module name="iNoty.buildSrc" target="17" />
+      <module name="iNoty.buildSrc.main" target="17" />
+      <module name="iNoty.buildSrc.test" target="17" />
+      <module name="iNoty.common" target="17" />
+      <module name="iNoty.designsystem" target="17" />
+      <module name="iNoty.designsystem.ui" target="17" />
+      <module name="iNoty.local-storage" target="17" />
+      <module name="iNoty.navigation" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

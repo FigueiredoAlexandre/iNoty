@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_inoty_dark_blue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.example.ui.toolbar.INotyToolbar
+        android:id="@+id/diaryCreationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_inoty_dark_blue"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/previousEmojiArrow"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:contentDescription="@string/diary_creation_arrow_left_description"
+                app:layout_constraintBottom_toBottomOf="@id/emotionEmojiImageView"
+                app:layout_constraintEnd_toStartOf="@id/emotionEmojiImageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/emotionEmojiImageView"
+                app:srcCompat="@drawable/ic_inoty_arrow_previous" />
+
+            <ImageView
+                android:id="@+id/emotionEmojiImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/inoty_dimen_24"
+                android:importantForAccessibility="no"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_inoty_laughing_emoji" />
+
+            <ImageView
+                android:id="@+id/nextEmojiArrow"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:contentDescription="@string/diary_creation_arrow_left_description"
+                app:layout_constraintBottom_toBottomOf="@id/emotionEmojiImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/emotionEmojiImageView"
+                app:layout_constraintTop_toTopOf="@id/emotionEmojiImageView"
+                app:srcCompat="@drawable/ic_inoty_arrow_next" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/diaryTitleInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="none"
+                app:layout_constraintEnd_toStartOf="@+id/nextEmojiArrow"
+                app:layout_constraintStart_toStartOf="@id/previousEmojiArrow"
+                app:layout_constraintTop_toBottomOf="@id/emotionEmojiImageView">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/diaryTitleEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/inoty_dimen_16"
+                    android:background="@null"
+                    android:importantForAutofill="no"
+                    android:inputType="text|textNoSuggestions"
+                    android:textColorHint="@color/color_inoty_white"
+                    app:layout_constraintEnd_toStartOf="@+id/nextEmojiArrow"
+                    app:layout_constraintStart_toStartOf="@id/previousEmojiArrow"
+                    app:layout_constraintTop_toBottomOf="@id/emotionEmojiImageView" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/diaryBodyInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inoty_dimen_32"
+                android:layout_marginEnd="@dimen/inoty_dimen_16"
+                app:boxBackgroundMode="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/diaryTitleInput"
+                app:layout_constraintTop_toBottomOf="@id/diaryTitleInput">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/diaryBodyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/inoty_dimen_16"
+                    android:background="@null"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="@color/color_inoty_white"
+                    app:layout_constraintEnd_toStartOf="@+id/nextEmojiArrow"
+                    app:layout_constraintStart_toStartOf="@id/previousEmojiArrow"
+                    app:layout_constraintTop_toBottomOf="@id/emotionEmojiImageView" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingTop="@dimen/inoty_dimen_32"
+        android:background="@drawable/diary_creation_image_section_bg"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/diaryCreationImagesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingHorizontal="@dimen/inoty_dimen_16"
+            android:layout_marginBottom="@dimen/inoty_dimen_8"
+            android:orientation="horizontal"
+            tools:listitem="@layout/diary_creation_image_item_layout"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <com.example.ui.button.INotyButton
+            android:id="@+id/saveDiaryButton"
+            style="@style/iNotyButtonPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:btnText="@string/diary_creation_save_label" />
+
+    </LinearLayout>
+
+</LinearLayout>

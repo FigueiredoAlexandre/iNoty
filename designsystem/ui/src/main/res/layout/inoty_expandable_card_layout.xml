@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_inoty_dark_blue">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/inoty_dimen_8"
+        app:cardCornerRadius="@dimen/inoty_dimen_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/emotionAndTimeContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_inoty_green"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/emojiImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/inoty_dimen_8"
+                    android:contentDescription="@string/inoty_laughing_emoji_content_description"
+                    app:srcCompat="@drawable/ic_inoty_laughing_emoji" />
+
+                <TextView
+                    android:id="@+id/emotionalStateTextView"
+                    style="@style/iNotyLabelDark"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    tools:text="Feliz" />
+
+                <TextView
+                    android:id="@+id/diaryTimeTextView"
+                    style="@style/iNotyLabelDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/inoty_dimen_8"
+                    android:gravity="center"
+                    tools:text="12:45pm" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_inoty_medium_dark_blue"
+                app:layout_constraintTop_toBottomOf="@id/emotionAndTimeContainer">
+
+                <TextView
+                    android:id="@+id/diaryText"
+                    style="@style/iNotyBodyWhiteSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/inoty_dimen_16"
+                    android:layout_marginVertical="@dimen/inoty_dimen_16"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="4"
+                    app:layout_constraintBottom_toTopOf="@id/gallerBarrier"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus congue augue, eu molestie leo. Fusce ultricies suscipit lectus eget commodo. Aenean luctus cursus." />
+
+                <TextView
+                    android:id="@+id/showImagesText"
+                    style="@style/iNotyBodyWhiteSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/inoty_dimen_16"
+                    android:text="@string/inoty_show_images"
+                    app:layout_constraintBottom_toTopOf="@id/spacer"
+                    app:layout_constraintStart_toStartOf="@id/diaryText"
+                    app:layout_constraintTop_toBottomOf="@id/diaryText" />
+
+                <Space
+                    android:id="@+id/spacer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/inoty_dimen_8"
+                    app:layout_constraintTop_toBottomOf="@id/showImagesText"
+                    app:layout_constraintBottom_toBottomOf="@id/gallerBarrier"/>
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/gallerBarrier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="top"
+                    app:constraint_referenced_ids="galleryContainer" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/galleryContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/inoty_dimen_16"
+                    android:layout_marginBottom="@dimen/inoty_dimen_16"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:visibility="visible">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/imagesRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/inoty_dimen_24"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:listitem="@layout/inoty_image_gallery_layout" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

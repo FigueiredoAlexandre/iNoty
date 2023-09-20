@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "iNoty"
+include ':app'
+include ':features:diarylist'
+include ':navigation'
+include ':app:feature:diarylist'
+include ':designsystem'
+include ':designsystem:ui'
+include ':common'
+include ':app:feature:diarycreation'
+include ':local-storage'
+include ':rules'
